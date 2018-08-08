@@ -1,5 +1,5 @@
 
-export default theme => ({
+const styles = theme => ({
   body: {
     'padding': theme.spacing.unit * 2,
     [theme.breakpoints.up('lg')]: {
@@ -8,3 +8,5 @@ export default theme => ({
     },
   },
 });
+
+export default styles;

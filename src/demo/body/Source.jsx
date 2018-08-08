@@ -68,7 +68,7 @@ class Source extends React.Component {
       <div className={classes.root}>
         <div className={classNames(classes.ctr, { [classes.invalid]: !valid })}>
           <div>
-            <Icon fontSize className={classes.icon} />
+            <Icon className={classes.icon} />
             <div className={classes.title}>
               <p>{title}</p>
             </div>

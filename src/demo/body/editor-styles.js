@@ -1,4 +1,4 @@
-export default theme => ({
+const styles = theme => ({
   'root': {
     '& $ctr': {
       'borderStyle': 'solid',
@@ -38,3 +38,5 @@ export default theme => ({
   },
   'ctr': {},
 });
+
+export default styles;

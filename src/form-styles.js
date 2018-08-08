@@ -1,4 +1,4 @@
-export default theme => ({
+const formStyles = theme => ({
   root: {
     padding: theme.spacing.unit * 2,
   },
@@ -16,3 +16,5 @@ export default theme => ({
     fontSize: '100%',
   },
 });
+
+export default formStyles;

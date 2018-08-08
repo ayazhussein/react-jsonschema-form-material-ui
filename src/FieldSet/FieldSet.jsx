@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import endsWith from 'lodash/endsWith';
 import isEqual from 'lodash/isEqual';
 import { withStyles } from '@material-ui/core/styles';
-import { InputLabel } from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
 import fieldSetStyles from './field-set-styles';
 import FieldSetArray from './FieldSetArray';
 import FieldSetObject from './FieldSetObject';

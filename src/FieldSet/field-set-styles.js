@@ -1,4 +1,4 @@
-export default ({
+const styles = ({
   fieldSet: theme => ({
     root: {
       display: 'flex',
@@ -73,3 +73,5 @@ export default ({
     'listItem': {},
   },
 });
+
+export default styles;

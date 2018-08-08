@@ -1,4 +1,4 @@
-export default theme => ({
+const styles = theme => ({
   root: {
     'padding': theme.spacing.unit,
     '&$withLabel': {
@@ -17,3 +17,5 @@ export default theme => ({
   },
   withLabel: {},
 });
+
+export default styles;
