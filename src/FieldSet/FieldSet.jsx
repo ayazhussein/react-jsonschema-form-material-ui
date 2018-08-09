@@ -39,4 +39,4 @@ export class RawFieldSet extends React.Component {
   }
 }
 
-export default withStyles(fieldSetStyles.fieldSet)(RawFieldSet);
+export default withStyles({})(RawFieldSet);
