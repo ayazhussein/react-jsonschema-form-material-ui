@@ -8,16 +8,16 @@ const port = process.env.PORT || 3005;
 const app = express();
 app.use(bodyParser.json());
 
-if (process.env.NODE_ENV !== 'production') {
-  const webpack = require('webpack');
-  const webpackConfig = require('../../webpack.config.demo');
-  const webpackCompiler = webpack(webpackConfig);
-  const webpackDevOptions = {
-    noInfo: true, publicPath: webpackConfig.output.publicPath,
-  };
-  app.use(require('webpack-dev-middleware')(webpackCompiler, webpackDevOptions));
-  app.use(require('webpack-hot-middleware')(webpackCompiler));
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   const webpack = require('webpack');
+//   const webpackConfig = require('../../webpack.config.demo');
+//   const webpackCompiler = webpack(webpackConfig);
+//   const webpackDevOptions = {
+//     noInfo: true, publicPath: webpackConfig.output.publicPath,
+//   };
+//   app.use(require('webpack-dev-middleware')(webpackCompiler, webpackDevOptions));
+//   app.use(require('webpack-hot-middleware')(webpackCompiler));
+// }
 // serve static files from webpack dist dir
 const publicPath = path.join(__dirname, '../../dist');
 app.use(express.static(publicPath));

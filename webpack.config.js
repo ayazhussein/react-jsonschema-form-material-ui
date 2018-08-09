@@ -9,6 +9,7 @@ if (process.env.NODE_ENV !== 'production' && process.env.NO_STUBS === undefined)
 };
 
 var config = {
+  mode: 'production',
   entry: path.join(__dirname, 'src/index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
